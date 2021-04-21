@@ -24,5 +24,6 @@ export default createGlobalStyle`
     --dark: #001634;
     --extra-dark: #091223;
     --grey: #a7a7a7;
+    --light: #f3f3f3;
   }
 `;
