@@ -4,12 +4,13 @@ import * as S from "./styles";
 
 interface TabProps {
   title: string;
+  isSelected: boolean;
 }
 
-const Tab: React.FC<TabProps> = ({ title }) => {
+const Tab: React.FC<TabProps> = ({ title, isSelected }) => {
   return (
-    <S.Container>
-      <S.TabTitle>{title}</S.TabTitle>
+    <S.Container isSelected={isSelected}>
+      <S.TabTitle isSelected={isSelected}>{title}</S.TabTitle>
     </S.Container>
   );
 };
